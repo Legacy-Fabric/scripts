@@ -20,7 +20,7 @@ apply plugin: org.gradle.api.plugins.JavaLibraryPlugin
 apply plugin: org.gradle.plugins.ide.eclipse.EclipsePlugin
 apply plugin: org.gradle.plugins.ide.idea.IdeaPlugin
 apply plugin: org.gradle.api.publish.maven.plugins.MavenPublishPlugin
-apply plugin: net.fabricmc.loom.LoomGradlePlugin
+apply plugin: net.fabricmc.loom.bootstrap.LoomGradlePluginBootstrap
 apply plugin: org.cadixdev.gradle.licenser.Licenser
 apply plugin: org.ajoberstar.grgit.gradle.GrgitPlugin
 apply plugin: com.matthewprenger.cursegradle.CurseGradlePlugin
@@ -111,7 +111,7 @@ allprojects {
 	apply plugin: org.gradle.api.plugins.quality.CheckstylePlugin
 	apply plugin: org.gradle.api.publish.maven.plugins.MavenPublishPlugin
 	apply plugin: org.gradle.plugins.signing.SigningPlugin
-	apply plugin: net.fabricmc.loom.LoomGradlePlugin
+	apply plugin: net.fabricmc.loom.bootstrap.LoomGradlePluginBootstrap
 	apply plugin: org.cadixdev.gradle.licenser.Licenser
 
 	sourceCompatibility = 1.8
